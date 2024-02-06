@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Be My Valentine?</title>
+<style>
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideIn {
+  from { transform: translateY(-50px); }
+  to { transform: translateY(0); }
+}
+
+/* Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  animation: slideIn 1s ease;
+}
+
+h1 {
+  animation: fadeIn 1s ease;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Will You Be My Valentine?</h1>
+
+  <p>Dear [Diane Lamban],</p>
+
+  <p>I hope this message finds you well. With Valentine's Day approaching, I wanted to take this opportunity to express my feelings for you. I have admired you from afar for some time now, and I would be honored if you would be my Valentine.</p>
+
+  <p>You bring joy and light into my life, and I cherish every moment we spend together. I believe we share a special connection, and I would love the chance to explore what could blossom between us.</p>
+
+  <p>If you feel the same way, I would be overjoyed to have you as my Valentine. Please let me know your thoughts when you have a moment.</p>
+
+  <p>Will you be my Valentine?</p>
+  
+  <!-- Choices -->
+  <button onclick="respond('Yes')">Yes</button>
+  <button onclick="respond('No')">No</button>
+</div>
+
+<script>
+function respond(choice) {
+  if (choice === 'No') {
+    alert("I'm glad you've chosen Yes! Looking forward to celebrating together!");
+  } else {
+    alert("Great! I'm excited to spend Valentine's Day with you!");
+  }
+}
+</script>
+
+</body>
+</html>
